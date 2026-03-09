@@ -1,0 +1,244 @@
+.container {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+    position: relative;
+}
+
+.welcome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcomeImg {
+    width: 600px;
+    margin-bottom: 1rem;
+}
+
+.illustration {
+    width: 250px;
+    height: 250px;
+    background: var(--white);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border: 4px solid var(--primary-blue);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.line {
+    width: 120px;
+    height: 6px;
+    background: #EEEEEE;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+.welcome h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #000000;
+}
+
+.welcome p {
+    font-size: 1rem;
+    color: #292929;
+    max-width: 500px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.encryptionFooter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #292929;
+    font-size: 0.85rem;
+}
+
+/* Notes Active View */
+.header {
+    background-color: var(--primary-blue);
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.headerAvatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.headerName {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.notesList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.noteCard {
+    background: white;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.noteContent {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    white-space: pre-wrap;
+    color: #000000;
+}
+
+.noteMeta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #353535;
+}
+
+.inputArea {
+    background: #001F8B;
+    padding: 1rem 1.5rem;
+}
+
+.textareaWrapper {
+    background: white;
+    border-radius: 8px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.textarea {
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    height: 100px;
+    width: 100%;
+    color: #2F2F2F;
+}
+
+.textarea::placeholder {
+    color: #ABABAB;
+}
+
+.sendBtn {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sendBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.backBtn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100vw;
+    }
+
+    .welcome {
+        display: none;
+    }
+
+    .header {
+        padding: 0.6rem 1rem;
+    }
+
+    .backBtn {
+        display: block;
+    }
+
+    .headerAvatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    .headerName {
+        font-size: 1.1rem;
+    }
+
+    .notesList {
+        padding: 1rem;
+    }
+
+    .noteCard {
+        padding: 0.8rem 1rem;
+    }
+
+    .inputArea {
+        padding: 0.8rem 1rem;
+    }
+
+    .textarea {
+        height: 80px;
+        font-size: 0.95rem;
+    }
+
+    .encryptionFooter {
+        display: none;
+    }
+}

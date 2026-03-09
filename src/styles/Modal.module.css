@@ -1,0 +1,77 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(47, 47, 47, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 450px;
+}
+
+.modal h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.inputRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.inputRow label {
+    width: 120px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.inputRow input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: 2px solid #CCCCCC;
+    border-radius: 22px;
+    font-size: 1rem;
+}
+
+.colorPicker {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.colorOption {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.colorOption:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    border: 2px solid black;
+}
+
+.createBtn {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 2rem;
+    background: #001F8B;
+    color: white;
+    font-size: 0.95rem;
+    border-radius: 11px;
+}
