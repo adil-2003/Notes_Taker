@@ -28,8 +28,8 @@ const NotesView = ({ group, isMobile, onBack }) => {
             <div className={styles.container}>
                 <div className={styles.welcome}>
                     <img src="/pic1.png" alt="Pocket Notes Welcome" className={styles.welcomeImg} />
-                    <h1>NoteSphere</h1>
-                    <p>Sync your thoughts across all devices securely. Join thousands using NoteSphere daily.</p>
+                    <h1>Pocket Notes</h1>
+                    <p>Sync your thoughts across all devices securely. Join thousands using Pocket Notes daily.</p>
                 </div>
                 <div className={styles.encryptionFooter}>
                     <Lock size={14} /> end-to-end encrypted
